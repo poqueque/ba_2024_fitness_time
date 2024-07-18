@@ -53,8 +53,8 @@ class _HomeState extends State<Home> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          var activity = await Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const NewActivity()));
+          var activity = await Navigator.push(
+              context, MaterialPageRoute(builder: (context) => NewActivity()));
           activities.add(activity);
           setState(() {});
         },

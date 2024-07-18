@@ -1,16 +1,11 @@
 import 'package:fitness_time/models/activity.dart';
 import 'package:flutter/material.dart';
 
-class NewActivity extends StatefulWidget {
-  const NewActivity({super.key});
+class NewActivity extends StatelessWidget {
+  NewActivity({super.key});
 
-  @override
-  State<NewActivity> createState() => _NewActivityState();
-}
-
-class _NewActivityState extends State<NewActivity> {
-  TextEditingController activityController = TextEditingController();
-  TextEditingController distanceController = TextEditingController();
+  final TextEditingController activityController = TextEditingController();
+  final TextEditingController distanceController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
