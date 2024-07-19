@@ -10,6 +10,10 @@ class AppStyles {
     fontSize: 40,
     color: Colors.black45,
   );
+  static const mediumTitle = TextStyle(
+    fontSize: 24,
+    color: Colors.black45,
+  );
 
   static const subtitle = TextStyle(
     color: Colors.black45,

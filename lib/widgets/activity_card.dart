@@ -25,17 +25,18 @@ class ActivityCard extends StatelessWidget {
                 size: 32,
               ),
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  activity.type,
-                  style: AppStyles.dataText,
-                ),
-                Text(formattedDate),
-              ],
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    activity.type,
+                    style: AppStyles.dataText,
+                  ),
+                  Text(formattedDate),
+                ],
+              ),
             ),
-            const Spacer(),
             Text(
               "${activity.distance} km",
               style: AppStyles.dataText,
